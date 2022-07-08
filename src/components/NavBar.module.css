@@ -1,0 +1,59 @@
+.nav{
+    padding: 16px 3%;  
+    position: fixed;        /**sets the image fixed that it does not move when you scroll down the page*/
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    z-index: 1;             /**Being a header, this sets it to always be on top*/
+
+    display: flex;
+    justify-content: space-between;         /*sets space between the two images(Netflix logo and Netflix Avatar) in a flex box*/
+}
+
+.nav__black{
+    background-color: #000;
+    padding: 16px 3%;  
+    position: fixed;        /**sets the image fixed that it does not move when you scroll down the page*/
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    z-index: 1;             /**Being a header, this sets it to always be on top*/
+
+   
+    /** Aminations */
+    transition-timing-function: ease-in;    /*makes the div to phase in and out gradually*/
+    transition: all 0.5s;
+}
+
+img:not(:root) {
+    
+}
+
+.nav__logo{
+    width: 80px;
+    object-fit: contain;
+    position: fixed;
+    left: 20px;
+    /*height: 40px;
+    width: 110px;
+    vertical-align: middle;
+    text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;*/
+}
+
+.nav__avatar {
+    width: 30px;
+    height: 27px;
+    object-fit: contain;
+    position: fixed;
+    right: 20px;
+    /*
+    height: 40px;
+    width: 110px;
+    */
+}
